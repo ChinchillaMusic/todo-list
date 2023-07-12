@@ -1,0 +1,29 @@
+.main {
+  background-color: #F5F5F5;
+}
+
+.title {
+  color: #EAD7D7;
+  font-size: 75px;
+}
+
+.clear {
+  text-align: end;
+}
+
+.clear:hover {
+  text-decoration: underline;
+}
+
+.selectors {
+  text-align: center;
+}
+
+.toggle-text {
+  font-size: smaller;
+}
+
+.text-complete {
+  color: #c0c0c0;
+  text-decoration: line-through;
+}

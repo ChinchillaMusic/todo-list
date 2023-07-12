@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>To Do List</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/6a9532a66c.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body class="main fw-bold">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 p-3">
+          <h1 class="text-center title">To do list</h1>
+        </div>
+        <div class="col-1 col-md-3"></div>
+        <div class="col-10 col-md-6">
+          <div id="create-task" class="input-group input-group-lg mb-3">
+            <input id="new-task-content" type="text" class="form-control" placeholder="New task" aria-label="Assignment input" aria-describedby="button-create">
+            <button class="btn btn-outline-secondary" type="button" id="button-create"><i class="fa-solid fa-check fa-2xl" style="color: #c0c0c0;"></i></button>
+          </div>
+          <div class="row toggle-text mb-3">
+            <div class="col mx-1 p-1">
+              <span id="items-left"></span>
+            </div>
+            <div class="col selectors">
+              <div class="border border-dark rounded p-1 mx-1 d-inline-block">
+                <a id="show-all" class="text-decoration-none text-reset" href="#"> All </a>
+              </div>
+              <div class="p-1 mx-1 d-inline-block">
+                <a id="show-active" class="text-decoration-none text-reset" href="#"> Active </a>
+              </div>
+              <div class="p-1 mx-1 d-inline-block">
+                <a id="show-completed" class="text-decoration-none text-reset" href="#"> Completed </a>
+              </div>
+            </div>
+            <div class="col clear mx-1 p-1">
+              <a id="clear-completed" class="text-decoration-none text-reset" href="#"> Clear completed </a>
+            </div>
+          </div>
+          <div id="todo-list"></div>
+        </div>
+        <div class="col-1 col-md-3"></div>
+      </div>
+    </div>
+  </body>
+</html>
